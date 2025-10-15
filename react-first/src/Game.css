@@ -1,0 +1,35 @@
+/* 主游戏容器 - 使用 flexbox 让棋盘和历史记录并排显示 */
+.game {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* 棋盘容器 */
+.game-board {
+  flex-shrink: 0;
+}
+
+/* 游戏信息容器（历史记录） */
+.game-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #783;
+}
+
+.board-row {
+  display: flex;
+  color: violet;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  color: red;
+}
